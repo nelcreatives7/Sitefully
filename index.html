@@ -190,9 +190,8 @@ body {
 >
   <div class="container mx-auto px-4 lg:px-8 py-2 flex items-center justify-center text-center">
     <p class="flex flex-wrap items-center justify-center gap-2 text-sm md:text-base font-medium leading-tight">
-      <i class="fas fa-bolt text-yellow-300 animate-pulse"></i>
       <span>
-        ✨ <strong class="text-white">Limited Offer:</strong> Get 
+         <strong class="text-white">Limited Offer:</strong> Get 
         <strong class="text-yellow-300">20% OFF</strong> on all web development services!
       </span>
     </p>
@@ -202,7 +201,7 @@ body {
 <!-- 🌐 Navigation Bar (Clean Modern UI) -->
 <nav
   id="navbar"
-  class="fixed top-[40px] left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-[0_2px_12px_rgba(0,0,0,0.04)] transition-all duration-300"
+  class="fixed top-[40px] left-0 right-0 z-50 bg-white border-b border-gray-100 shadow-md"
 >
   <div class="container mx-auto px-4 lg:px-8">
     <div class="flex items-center justify-between h-16 md:h-20">
@@ -862,28 +861,20 @@ body {
         </div>
       </div>
     </section>
-
-<!-- 💬 Animated WhatsApp Button with Popup -->
-<div
-  class="fixed bottom-6 right-6 z-[100] flex flex-col items-end space-y-2 group"
+   <!-- WhatsApp Floating Button -->
+<a 
+  href="https://wa.me/01163068633" 
+  target="_blank"
+  class="fixed bottom-6 right-6 w-16 h-16 bg-green-500 text-white rounded-full flex items-center justify-center shadow-lg animate-bounce hover:scale-110 transition-transform z-[9999]"
 >
-  <!-- Auto-Wiggling Popup -->
-  <div
-    class="popup-message opacity-0 group-hover:opacity-100 translate-y-2 group-hover:translate-y-0 transition-all duration-300 bg-white shadow-lg border border-indigo-100 text-gray-800 text-sm font-medium rounded-xl px-4 py-2 mb-1"
-  >
-    Hi 👋 Need help? <span class="text-pink-500 font-semibold">Chat with us!</span>
-  </div>
+  <!-- WhatsApp SVG Icon -->
+  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="w-8 h-8" viewBox="0 0 24 24">
+    <path d="M20.52 3.48a11.71 11.71 0 00-16.57 0 11.71 11.71 0 00-3.43 8.29c0 2.13.56 4.21 1.63 6.01l-1.72 6.29 6.47-1.7a11.69 11.69 0 005.41 1.34h.01a11.71 11.71 0 008.29-3.44 11.71 11.71 0 000-16.56zm-8.52 16.04a9.22 9.22 0 01-4.6-1.2l-.33-.19-3.85 1.01 1.01-3.75-.22-.36a9.21 9.21 0 01-1.38-4.44 9.21 9.21 0 0114.02-7.33 9.22 9.22 0 012.83 6.49 9.21 9.21 0 01-9.43 9.42zm5.1-6.77c-.28-.14-1.65-.81-1.9-.91s-.42-.14-.6.14-.69.91-.85 1.1-.31.21-.58.07a7.13 7.13 0 01-2.1-1.29 7.42 7.42 0 01-1.36-1.68c-.14-.28 0-.43.1-.57.1-.1.28-.28.42-.42.14-.14.19-.24.28-.4.1-.14.05-.28-.02-.42-.07-.14-.6-1.44-.82-1.97-.22-.52-.45-.45-.6-.46-.15 0-.33-.02-.51-.02s-.42.07-.64.28c-.22.21-.85.83-.85 2.03s.87 2.36.99 2.52c.14.14 1.72 2.63 4.16 3.68.58.25 1.03.4 1.38.51.58.18 1.11.15 1.53.09.46-.06 1.65-.67 1.88-1.31.22-.63.22-1.17.15-1.31-.07-.14-.26-.22-.54-.36z"/>
+  </svg>
+</a>
 
-  <!-- Dancing WhatsApp Button -->
-  <a
-    href="https://wa.me/254712345678?text=Hello%20Sitefully!%20I'm%20interested%20in%20your%20services."
-    target="_blank"
-    class="flex items-center gap-3 bg-gradient-to-r from-indigo-600 to-pink-500 text-white px-4 py-3 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 animate-dance"
-  >
-    <i class="fab fa-whatsapp text-2xl"></i>
-    <span class="font-medium text-sm md:text-base">WhatsApp Us</span>
-  </a>
-</div>
+
+
 
     <!-- 🌙 SITEFULLY FOOTER (Indigo→Pink Theme) -->
     <footer
@@ -1021,25 +1012,7 @@ body {
 
     <!-- SCRIPTS -->
     <script>
-      // NAVBAR BEHAVIOR
-
-      window.addEventListener("scroll", () => {
-        const nav = document.getElementById("navbar");
-        if (window.scrollY > 80) {
-          nav.classList.add(
-            "bg-indigo-950/70",
-            "shadow-lg",
-            "backdrop-blur-lg"
-          );
-        } else {
-          nav.classList.remove(
-            "bg-indigo-950/70",
-            "shadow-lg",
-            "backdrop-blur-lg"
-          );
-        }
-      });
-
+      
       // Menu elements
       const menuBtn = document.getElementById("menuBtn");
       const closeMenu = document.getElementById("closeMenu");
